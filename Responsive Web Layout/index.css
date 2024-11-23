@@ -1,0 +1,43 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    font-style: normal;
+    width: 75vw;
+    height: 75vh;
+}
+
+header
+{
+    width: 100vw;
+    height: 13vh;
+}
+
+footer{
+    width: 100vw;
+    height: 12vh;
+}
+
+nav{
+    width: 30vw;
+}
+
+.row{
+    font-family: Arial, sans-serif;
+    font-style: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    padding: 0;
+    display: grid;
+}
+.nav-item{
+    text-align: left;
+}
+.nav-link:hover {
+    background-color: #aca06a;
+}

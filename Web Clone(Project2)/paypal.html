@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="paypal.css">
+  <title>Paypal Clone</title>
+</head>
+<body>
+
+	<div class="paypal-clonepage">
+		<nav class="navbar">
+			<div class="navbar-column-1">
+				<button id="paypal-logo" type="button" class="btn btn-primary">
+					<img src="Images/paypallogo.png">
+				</button>
+			</div>
+			<div class="navbar-column-2">
+				<ul>
+					<li>INDIVIDUAL </li>
+					<li>BUSINESS </li>
+					<li>PARTNERS </li>
+					<li>USEFUL INFO </li>
+				</ul>
+			</div>
+			<div class="navbar-column-3">
+				<button id="login-btn" type="button" class="btn btn-light">Log In</button>
+				<button id="signup-btn" type="button" class="btn btn-primary">Sign Up</button>
+			</div>
+		</nav>
+
+		<div id="sliding-panel" class="slide-panel">
+			<div class="slide-text" z="3">
+				<h1 id="fg-text">Secure Payments.<br> Smooth Shopping.</h1>
+				<h3 id="fg-s-text">More ways to pay and more places to <br>shop. Send money quickly and easily <br> around the globe.</h3>
+				<button id="signup-btn" type="button" class="btn btn-primary">Sign Up</button>
+				<button id="signup2-btn" type="button" class="btn btn-primary">Connect With Us</button>
+
+				<div class="slide-btn">
+					<button id="prev-btn" type="button" class="btn btn-light" onclick=next() z="3">&lt;</button>
+					<button id="next-btn" type="button" class="btn btn-light" onclick=next() z="3">&gt;</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="business">
+			<div class="business-column-1">
+				<h3>Looking for PayPal Business Solutions?<br><h4>Across regions and around the world, we are here to support you.</h4></h3>
+			</div>
+			<div class="business-column-2">
+				<button id="business-btn" type="button" class="btn btn-primary">PayPal for business</button>
+			</div>
+		</div>
+
+		<div class="business-2">
+				<h2>Find more ways to shop<br> with PayPal for you.</h2>
+			<div class="bs2-columns">
+				<div class="bs2-column-1">
+					<img src="Images/business2bg1.jpg">
+					<h2>The world is <br>your shopping mall.</h2>
+					<p>From big brands to little boutiques, you can<br>shop safely at over millions of online stores with<br> PayPal.<br><br></p>
+					<button id="shop-btn" type="button" class="btn btn-primary">Sign Up</button>
+				</div>
+				<div class="bs2-column-2">
+					<img src="Images/business2bg2.jpg">
+					<h2>Pay with your <br>preferred card.</h2>
+					<p>Link all your cards and choose which one to use<br> at checkout. Shopping online has never been<br> this easy. You can also keep earning rewards<br> from your favourite cards.¹</p>
+					<button id="link-btn" type="button" class="btn btn-primary">Link a card now</button>
+				</div>
+				<div class="bs2-column-3">	
+					<img src="Images/business2bg3.jpg">
+					<h2>Shop online <br>with confidence.</h2>
+					<p>Shop online with confidence - with 24/7 fraud<br> monitoring and Buyer Protection² on eligible<br> purchases. <a href="">Terms and limitations apply.</a></p>
+`					<button id="more-btn" type="button" class="btn btn-primary">Find Out More</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="business-3">
+			<div id="bs3-c1" class ="bs3-column">
+				<h2>Make and recieve<br> payments with ease.<br></h2>
+				<h3>Popular payments, happy customers.<br></h3>
+				<p><br>Help maximise conversion and reduce cart<br>abandonment with a wide range of digital payment<br>options, customisable in one account.</p>
+				<button id="more-btn" type="button" class="btn btn-primary">Optimise Checkout</button>
+				<h2>Invoice and get paid fast<br></h2>
+				<p>Send unlimited invoices that customers can pay even if<br> they don't have a PayPal account - with Seller Protection<br> from fraud and unauthorised transactions.³</p>
+				<button id="more-btn" type="button" class="btn btn-primary">Send an invoice</button>
+			</div>
+			<div id="bs3-c2" class ="bs3-column">
+				<img src="Images/business2bg4.png">
+			</div>
+		</div>
+
+		<div class="paypal-1">
+			<h2>PayPal by the numbers.</h2>
+			<div class="pp-columns">
+				<div class="pp-column-1">
+					<h3>427M Active accounts.⁴<br></h3>
+					<h3>$403.9B total payment volume.⁵<br></h3>
+				</div>
+				<div class="pp-column-2">
+					<h3>6.5B total transactions.⁶<br><//h3>
+					<h3>74% increase in buyer confidence.⁷</h3><br></h3>
+				</div>
+			</div>		
+		</div>
+
+		<div class = "paypal-brands">
+			<h2>Shop from brands you love.</h2>
+			<div class="brand-logo">
+				<img src="Images/brandlogo.png">
+			</div>
+		</div>
+
+		<div class="paypal-2">
+			<h1>Join the global community of PayPal users who are sending,<br> spending, and receiving money securely every day.<br></h1>
+			<button id="signup-btn" type="button" class="btn btn-primary">Sign Up Now</button>
+		</div>
+
+		<div class="paypal-3">
+			<ul>Terms & Conditions:
+				<li></li>
+				<li><br>* Buyer Protection is available on eligible purchases only. See the Buyer Protection section of the	<a href="">User Agreement </a>for more information.</li>
+				<li>** Subject to issuer’s reward programme terms and conditions.</li>
+				<li></li>
+				<li><br>¹ Reward scheme terms may differ when using PayPal. Please refer to your card issuer.</li>
+				<li>² For eligible purchases within 180 days of payment. <a href="">Terms and conditions apply.</a></li>
+				<li>³ Available on eligible purchases. <a href="">Limitations apply.</a></li>
+				<li>⁴ PayPal Earnings-Q1, 2024, based on PayPal internal data. Active accounts are accounts that have completed a transaction within the past 12 months.</li>
+				<li>⁵ PayPal Earnings-Q1, 2024, based on PayPal internal data.</li>
+				<li>⁶ PayPal Earnings-Q1, 2024, based on PayPal internal data.</li>
+				<li>⁷ Nielsen, commissioned by PayPal, Nielsen Media Attitudinal Survey of USA (Feb 2023) with 3,999 recent purchasers (past 2 weeks) from large<br> enterprise merchants, including 1,999 PayPal transactions & 2,000 non-PayPal transactions. Base N. PayPal users = 3,350.</li>
+				<li></li>
+				<li><br>PayPal Services in India are provided by PayPal Payments Private Limited (CIN U74990MH2009PTC194653). Users are advised to read the terms and<br>conditions carefully.</li>
+				<li><br>When you visit or interact with our sites, services, applications, tools or messaging, we or our authorised service providers may use cookies, web beacons,<br> and other similar technologies for storing information to help provide you with a better, faster and safer experience and for advertising purposes. Learn <br>more <a href="">here.</a></li>
+				<li><br></li>
+				<li><br></li>
+				<li><br></li>
+				<li>END OF PAGE</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="paypal.js"></script>
+</body>
+</html>
+
